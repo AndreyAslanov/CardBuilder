@@ -1,0 +1,66 @@
+// MARK: - General
+
+//Tabbar VC
+
+"game" = "Game";
+"generator" = "Generator";
+"statistics" = "Statistics";
+"settings" = "Settings";
+
+// Game VC
+
+"averageTime" = "Average game time";
+"averagePlayers" = "Average quantities players";
+"averageGames" = "Number of added games";
+"createGameLabel" = "Create game";
+"createGameSublabel" = "There are no scheduled holidays for this day";
+"create" = "Create";
+"nameGame" = "Enter name game";
+"quantitiesPlayers" = "Enter quantities players";
+"gameTime" = "Enter game time";
+"enterRules" = "Enter rules";
+"createGame" = "Create game";
+"editGame" = "Edit game";
+"basicCards" = "Basic cards";
+"nameGameLabel" = "Name Game";
+"playersLabel" = "Players";
+"gameTimeLabel" = "Game Time";
+"quantitiesPlayers" = "Quantities players";
+"gameTime" = "Game time";
+"rules" = "Rules";
+
+// Generator VC
+
+"playerGenerator" = "Player Generator";
+"enterNumberPlayers" = "Enter number of players";
+"generate" = "Generate";
+"playerSelected" = "The player with number is selected";
+"close" = "Close";
+"deleteThis" = "Do you really want to delete this?";
+"delete" = "Delete";
+"value" = "Value";
+
+// Statistics VC
+
+"quantityWins" = "Quantity of wins";
+"quantityDefeats" = "Quantity of defeats";
+"hoursGames" = "Total quantity of hours for games";
+"favoriteGame" = "Favorite game";
+"edit" = "Edit";
+"enterQuantityWins" = "Enter quantity of wins";
+"enterQuantityDefeats" = "Enter quantity of defeats";
+"enterHoursGames" = "Enter total quantity of hours for games";
+"enterFavoriteGame" = "Enter favorite game";
+"editStatistics" = "Edit statistics";
+
+// Settings VC
+
+"settings" = "Settings";
+"reset" = "Reset progress";
+"noData" = "No data";
+"shareApp" = "Share app";
+"usagePolicy" = "Usage Policy";
+"rateApp" = "Rate app";
+"back" = "Back";
+"save" = "Save";
+"cancel" = "Cancel";

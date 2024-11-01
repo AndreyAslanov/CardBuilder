@@ -1,0 +1,62 @@
+import UIKit
+
+final class MockCardsData {
+    static let shared = MockCardsData()
+
+    private init() {}
+
+    let cards: [CardModel] = [
+        CardModel(imageName: "Card_1", isSelected: false, index: 0),
+        CardModel(imageName: "Card_2", isSelected: false, index: 1),
+        CardModel(imageName: "Card_3", isSelected: false, index: 2),
+        CardModel(imageName: "Card_4", isSelected: false, index: 3),
+        CardModel(imageName: "Card_5", isSelected: false, index: 4),
+        CardModel(imageName: "Card_6", isSelected: false, index: 5),
+        CardModel(imageName: "Card_7", isSelected: false, index: 6),
+        CardModel(imageName: "Card_8", isSelected: false, index: 7),
+        CardModel(imageName: "Card_9", isSelected: false, index: 8),
+        CardModel(imageName: "Card_10", isSelected: false, index: 9),
+        CardModel(imageName: "Card_12", isSelected: false, index: 10),
+        CardModel(imageName: "Card_13", isSelected: false, index: 11),
+        CardModel(imageName: "Card_14", isSelected: false, index: 12),
+        CardModel(imageName: "Card_15", isSelected: false, index: 13),
+        CardModel(imageName: "Card_16", isSelected: false, index: 14),
+        CardModel(imageName: "Card_17", isSelected: false, index: 15),
+        CardModel(imageName: "Card_18", isSelected: false, index: 16),
+        CardModel(imageName: "Card_19", isSelected: false, index: 17),
+        CardModel(imageName: "Card_20", isSelected: false, index: 18),
+        CardModel(imageName: "Card_21", isSelected: false, index: 19),
+        CardModel(imageName: "Card_22", isSelected: false, index: 20),
+        CardModel(imageName: "Card_23", isSelected: false, index: 21),
+        CardModel(imageName: "Card_24", isSelected: false, index: 22),
+        CardModel(imageName: "Card_25", isSelected: false, index: 23),
+        CardModel(imageName: "Card_26", isSelected: false, index: 24),
+        CardModel(imageName: "Card_27", isSelected: false, index: 25),
+        CardModel(imageName: "Card_28", isSelected: false, index: 26),
+        CardModel(imageName: "Card_29", isSelected: false, index: 27),
+        CardModel(imageName: "Card_30", isSelected: false, index: 28),
+        CardModel(imageName: "Card_31", isSelected: false, index: 29),
+        CardModel(imageName: "Card_32", isSelected: false, index: 30),
+        CardModel(imageName: "Card_33", isSelected: false, index: 31),
+        CardModel(imageName: "Card_34", isSelected: false, index: 32),
+        CardModel(imageName: "Card_35", isSelected: false, index: 33),
+        CardModel(imageName: "Card_36", isSelected: false, index: 34),
+        CardModel(imageName: "Card_37", isSelected: false, index: 35),
+        CardModel(imageName: "Card_38", isSelected: false, index: 36),
+        CardModel(imageName: "Card_39", isSelected: false, index: 37),
+        CardModel(imageName: "Card_40", isSelected: false, index: 38),
+        CardModel(imageName: "Card_41", isSelected: false, index: 39),
+        CardModel(imageName: "Card_42", isSelected: false, index: 40),
+        CardModel(imageName: "Card_43", isSelected: false, index: 41),
+        CardModel(imageName: "Card_44", isSelected: false, index: 42),
+        CardModel(imageName: "Card_45", isSelected: false, index: 43),
+        CardModel(imageName: "Card_46", isSelected: false, index: 44),
+        CardModel(imageName: "Card_47", isSelected: false, index: 45),
+        CardModel(imageName: "Card_48", isSelected: false, index: 46),
+        CardModel(imageName: "Card_49", isSelected: false, index: 47),
+        CardModel(imageName: "Card_50", isSelected: false, index: 48),
+        CardModel(imageName: "Card_51", isSelected: false, index: 49),
+        CardModel(imageName: "Card_52", isSelected: false, index: 50),
+        CardModel(imageName: "Card_53", isSelected: false, index: 51)
+    ]
+}
