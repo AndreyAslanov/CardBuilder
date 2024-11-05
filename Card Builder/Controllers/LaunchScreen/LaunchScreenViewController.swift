@@ -8,8 +8,10 @@ final class LaunchScreenViewController: UIViewController {
     private let loadingIndicatorView = UIView()
     private let maskLayer = CALayer()
     private let mainImageView = UIImageView()
+    var isGame: Bool
 
-    init() {
+    init(isGame: Bool) {
+        self.isGame = isGame
         super.init(nibName: nil, bundle: nil)
     }
 

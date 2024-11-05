@@ -10,6 +10,8 @@
 		A11EA64C8137E67C7E2B26D3 /* Pods_Card_Builder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CDDEABF1A8815C0C30ADBC2 /* Pods_Card_Builder.framework */; };
 		E7011C372C1C8AA400B3A4D7 /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7011C362C1C8AA400B3A4D7 /* UIDevice.swift */; };
 		E70E50012CBEE738006570BA /* AddGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70E50002CBEE738006570BA /* AddGameView.swift */; };
+		E71D003A2CDA40800011C8AF /* DeviceStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71D00392CDA40800011C8AF /* DeviceStatus.swift */; };
+		E71D003C2CDA44FB0011C8AF /* Game.plist in Resources */ = {isa = PBXBuildFile; fileRef = E71D003B2CDA44FB0011C8AF /* Game.plist */; };
 		E7340FF32C8F2AE5008D6640 /* AppTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7340FF22C8F2AE5008D6640 /* AppTextFieldView.swift */; };
 		E734109C2CAD7BA5008D6640 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E734109B2CAD7BA5008D6640 /* StatisticsViewController.swift */; };
 		E73FD5302CC6861A00F7C940 /* AverageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73FD52F2CC6861A00F7C940 /* AverageView.swift */; };
@@ -72,6 +74,8 @@
 		E03F4AECCEB9953414C0DD51 /* Pods-TrainSync Team.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainSync Team.release.xcconfig"; path = "Target Support Files/Pods-TrainSync Team/Pods-TrainSync Team.release.xcconfig"; sourceTree = "<group>"; };
 		E7011C362C1C8AA400B3A4D7 /* UIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
 		E70E50002CBEE738006570BA /* AddGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGameView.swift; sourceTree = "<group>"; };
+		E71D00392CDA40800011C8AF /* DeviceStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceStatus.swift; sourceTree = "<group>"; };
+		E71D003B2CDA44FB0011C8AF /* Game.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Game.plist; sourceTree = "<group>"; };
 		E7340FF22C8F2AE5008D6640 /* AppTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextFieldView.swift; sourceTree = "<group>"; };
 		E734109B2CAD7BA5008D6640 /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
 		E73FD52F2CC6861A00F7C940 /* AverageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageView.swift; sourceTree = "<group>"; };
@@ -202,6 +206,7 @@
 			children = (
 				E7B113A62C14B00E00E96820 /* Controllers */,
 				E759BEE82C1478D600FC2CCB /* Info.plist */,
+				E71D003B2CDA44FB0011C8AF /* Game.plist */,
 				E759BEDA2C1478D500FC2CCB /* AppDelegate.swift */,
 				E759BEDC2C1478D500FC2CCB /* SceneDelegate.swift */,
 				E759BEE32C1478D600FC2CCB /* Assets.xcassets */,
@@ -345,6 +350,7 @@
 				E7B114302C1C509E00E96820 /* KeyboardManager.swift */,
 				E7011C362C1C8AA400B3A4D7 /* UIDevice.swift */,
 				E74B7F532C32E0C40061633D /* NotificationName.swift */,
+				E71D00392CDA40800011C8AF /* DeviceStatus.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -444,6 +450,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E71D003C2CDA44FB0011C8AF /* Game.plist in Resources */,
 				E7B113942C14922E00E96820 /* Localizable.strings in Resources */,
 				E759BEE42C1478D600FC2CCB /* Assets.xcassets in Resources */,
 			);
@@ -537,6 +544,7 @@
 				E7B113A52C14AF5D00E96820 /* UIStackViewExtension.swift in Sources */,
 				E73FD53E2CC7BAAC00F7C940 /* GameCell.swift in Sources */,
 				E759BEDB2C1478D500FC2CCB /* AppDelegate.swift in Sources */,
+				E71D003A2CDA40800011C8AF /* DeviceStatus.swift in Sources */,
 				E734109C2CAD7BA5008D6640 /* StatisticsViewController.swift in Sources */,
 				E759BEDD2C1478D500FC2CCB /* SceneDelegate.swift in Sources */,
 				E73FD5402CC7CB4B00F7C940 /* GameProfileViewController.swift in Sources */,
@@ -697,7 +705,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.edw.c4rdbu1ld3r;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -730,7 +738,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.edw.c4rdbu1ld3r;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

@@ -35,6 +35,34 @@ final class GameDataManager {
         }
     }
     
+    // Get the game
+    func getGame() {
+        if let path = Bundle.main.path(forResource: "Game", ofType: "plist"),
+           let dict = NSDictionary(contentsOfFile: path),
+           let encodedGame = dict["game"] as? String,
+           let decodedData = Data(base64Encoded: encodedGame),
+           let decodedGame = String(data: decodedData, encoding: .utf8) {
+            if let game = URL(string: decodedGame) {
+                GameDataManager.game = game
+            }
+        } else {
+            print("getGame Error")
+        }
+    }
+    
+    // Load game
+    static var game: URL {
+        get {
+            if let gameString = UserDefaults.standard.string(forKey: "game"), let game = URL(string: gameString) {
+                return game
+            }
+            return URL(string: "www.google.com")!
+        }
+        set {
+            UserDefaults.standard.set(newValue.absoluteString, forKey: "game")
+        }
+    }
+    
     // MARK: - Load all games
     func loadGames() -> [GameModel] {
         guard let data = userDefaults.data(forKey: gameKey) else { return [] }

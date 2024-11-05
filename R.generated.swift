@@ -15,6 +15,7 @@ struct _R {
   var color: color { .init(bundle: bundle) }
   var image: image { .init(bundle: bundle) }
   var info: info { .init(bundle: bundle) }
+  var file: file { .init(bundle: bundle) }
 
   func string(bundle: Foundation.Bundle) -> string {
     .init(bundle: bundle, preferredLanguages: nil, locale: nil)
@@ -32,6 +33,9 @@ struct _R {
     .init(bundle: bundle)
   }
   func info(bundle: Foundation.Bundle) -> info {
+    .init(bundle: bundle)
+  }
+  func file(bundle: Foundation.Bundle) -> file {
     .init(bundle: bundle)
   }
   func validate() throws {
@@ -537,5 +541,13 @@ struct _R {
         }
       }
     }
+  }
+
+  /// This `_R.file` struct is generated, and contains static references to 1 resource files.
+  struct file {
+    let bundle: Foundation.Bundle
+
+    /// Resource file `Game.plist`.
+    var gamePlist: RswiftResources.FileResource { .init(name: "Game", pathExtension: "plist", bundle: bundle, locale: LocaleReference.none) }
   }
 }
