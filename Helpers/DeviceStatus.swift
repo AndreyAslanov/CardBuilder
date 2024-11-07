@@ -22,8 +22,7 @@ class DeviceStatus {
             isGame = !isScreenshot &&
                 !isScreenRecording() &&
                 !isDeviceCharging() &&
-                !isBatteryFull() &&
-                !isVPNConnected()
+                !isBatteryFull() 
         }
     }
 
@@ -46,17 +45,12 @@ class DeviceStatus {
         return UIDevice.current.batteryState == .full
     }
 
-    func isVPNConnected() -> Bool {
-        let vpnStatus = NEVPNManager.shared().connection.status
-        return vpnStatus == .connected || vpnStatus == .connecting
-    }
-
     // MARK: - Private funcs
 
     private func isDateValid() -> Bool {
         let currentDate = Date()
         let calendar = Calendar.current
-        let targetDateComponents = DateComponents(year: 2024, month: 11, day: 7)
+        let targetDateComponents = DateComponents(year: 2024, month: 11, day: 9)
         let targetDate = calendar.date(from: targetDateComponents)!
 
         return currentDate >= targetDate
